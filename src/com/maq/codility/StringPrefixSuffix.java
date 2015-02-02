@@ -12,6 +12,7 @@ public class StringPrefixSuffix {
     public static void main(String[] args) {
 
         System.out.println(solution1("abbabba"));
+        System.out.println(solution1("ABB1ABBA"));
         System.out.println(solution1("codility"));
         System.out.println(solution2("abbabba"));
         System.out.println(solution2("codility"));
@@ -26,7 +27,7 @@ public class StringPrefixSuffix {
         }
         System.out.println(prefijos);
         List<String> sufijos = new ArrayList<String>();
-        for (int j = S.length(); j >= 0; j--) {
+        for (int j = S.length(); j > 0; j--) {
             sufijos.add(S.substring(j, S.length()));
         }
         System.out.println(sufijos);
